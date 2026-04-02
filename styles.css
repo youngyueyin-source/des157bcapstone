@@ -1,0 +1,62 @@
+body {
+    background: url(images/Light\ Version\ BG.svg) center no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    color: #7F8A89;
+    font-family: "Orelega One";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+h2 {
+    color: #7F8A89;
+    font-family: Platypi;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 4.68px;
+}
+
+h3 {
+    color: #647773;
+    font-family: Outfit;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+}
+
+
+header, img, h1{
+    display: flex;
+}
+
+nav li a{
+    color: #7F8A89;
+    font-family: "Kode Mono";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration: none;
+}
+
+ul, ol {
+    list-style-type: none;
+}
+
+nav li a:hover {
+    color:rgb(27, 45, 28);
+    text-decoration-line: underline;
+}
