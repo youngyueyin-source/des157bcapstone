@@ -1,62 +1,222 @@
 body {
-    background: url(images/Light\ Version\ BG.svg) center no-repeat;
-    background-size: cover;
+    margin: 0;
+    min-width: 900px;
+    background: url("images/Light Version BG.svg") center / cover no-repeat;
+    font-family: "Outfit", sans-serif;
+
+    transition: background 0.6s ease, color 0.4s ease;
 }
 
+/* DARK MODE BACKGROUND */
+body.dark {
+    background: url("images/Night Version BG.svg") center / cover no-repeat;
+}
+
+/* container */
+#container {
+    width: 1200px;
+    height: 750px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 120px;
+}
+
+.title-area {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+#kiwi {
+    width: 100px;
+    margin-bottom: 15px;
+}
+
+/* text */
 h1 {
-    color: #7F8A89;
     font-family: "Orelega One";
     font-size: 48px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    color: #7F8A89;
+    margin: 0;
 }
 
 h2 {
+    font-family: "Platypi";
+    font-size: 18px;
+    letter-spacing: 3px;
+    margin-top: 5px;
     color: #7F8A89;
-    font-family: Platypi;
-    font-size: 26px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 4.68px;
 }
 
-h3 {
-    color: #647773;
-    font-family: Outfit;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    text-decoration-line: underline;
-    text-decoration-style: solid;
-    text-decoration-skip-ink: none;
-    text-decoration-thickness: auto;
-    text-underline-offset: auto;
-    text-underline-position: from-font;
+/* button */
+button {
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 2px solid #7F8A89;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
+body.dark button {
+    border-color: white;
+    color: white;
+}
 
-header, img, h1{
+/* cards */
+section {
+    position: absolute;
+    border-radius: 18px;
+    border: 2px solid #647773;
+    background: rgba(241, 245, 236, 0.8);
+    box-shadow: 0 0 15px #AAB8B6;
+    padding: 20px 40px;
+    text-align: center;
+
+    transition: all 0.4s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+}
+
+section li {
+    margin: 6px 0;
+}
+
+section a {
+    display: block;
+    line-height: 1.4;
+}
+
+/* layout */
+#projects {
+    top: 180px;
+    left: 250px;
+    width: 350px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+/* center headings */
+.projects-grid h3 {
+    text-align: center;
+}
+
+/* LEFT COLUMN */
+.projects-grid > div:first-child {
+    justify-self: start;
+    text-align: left;
+}
+
+/* RIGHT COLUMN */
+.projects-grid > div:last-child {
+    justify-self: end;
+    text-align: center;
+}
+
+#research {
+    top: 210px;
+    right: 135px;
+    width: 260px;
+}
+
+.bottom-shelf {
+    position: absolute;
+    left: 180px;
+    top: 490px;
     display: flex;
+    gap: 40px;
+    align-items: flex-start;
 }
 
-nav li a{
+#development,
+#capstone {
+    position: static;
+}
+
+#development {
+    width: 360px;
+    min-height: 170px;
+    margin-top: -60px;
+}
+
+.two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px 30px; /* row gap, column gap */
+}
+
+.two-col li:nth-child(odd) {
+    text-align: left;
+}
+
+.two-col li:nth-child(even) {
+    text-align: right;
+}
+
+#capstone {
+    width: 180px;
+    min-height: 130px;
+}
+
+/* lists */
+ul, ol {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 6px 0;
+}
+
+a {
+    text-decoration: none;
     color: #7F8A89;
     font-family: "Kode Mono";
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    text-decoration: none;
 }
 
-ul, ol {
-    list-style-type: none;
+a:hover {
+    text-decoration: underline;
+    color: rgb(255, 84, 149);
 }
 
-nav li a:hover {
-    color:rgb(27, 45, 28);
-    text-decoration-line: underline;
+
+
+/* DARK MODE COLORS */
+body.dark h1,
+body.dark h2,
+body.dark a,
+body.dark h3 {
+    color: white;
+}
+
+body.dark a:hover {
+    color: rgb(255, 84, 149);
+}
+
+body.dark section {
+    background: rgba(20, 20, 20, 0.85);
+    border: 2px solid white;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.25);
+}
+
+#mode-toggle {
+    border-radius: 100px;
+}
+
+#mode-toggle:hover {
+    color: rgb(255, 84, 149);
+    border-color: rgb(255, 84, 149);
 }

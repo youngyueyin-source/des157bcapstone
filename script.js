@@ -1,29 +1,17 @@
-(function() {
+(function () {
     'use strict';
 
-    const button = document.querySelector('button');
+    const button = document.querySelector('#mode-toggle');
     const body = document.querySelector('body');
-    const banner = document.querySelector('#banner');
-    const sections = document.querySelectorAll('section')
-    let mode = 'dark';
+    const kiwi = document.querySelector('#kiwi');
 
-    button.addEventListener('click', function() {
-        if (mode === 'dark') {
-            body.className = 'switch';
-            banner.className = 'switch';
-            button.className = 'switch';
-            for (const section of sections) {
-                section.className = 'switch';
-            }
-            mode = 'light';
+    button.addEventListener('click', function () {
+        body.classList.toggle('dark');
+
+        if (body.classList.contains('dark')) {
+            kiwi.src = "images/white-kiwi.svg";
         } else {
-            body.removeAttribute('class');
-            banner.removeAttribute('class');
-            button.removeAttribute('class');
-            for (const section of sections) {
-                section.removeAttribute('class');
-            }
-            mode = 'dark'
+            kiwi.src = "images/green-kiwi.svg";
         }
-    })
-})()
+    });
+})();
