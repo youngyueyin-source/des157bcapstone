@@ -1,12 +1,28 @@
 body {
     margin: 0;
     min-height: 100vh;
-    background: linear-gradient(to bottom, rgb(244, 255, 243), rgb(170, 232, 205), rgb(30, 117, 184));
-    color: rgb(36, 49, 42);
+    background: linear-gradient(120deg,
+        rgb(182, 219, 203),
+        rgb(54, 180, 186),
+        rgb(26, 106, 152)
+    );
+    background-size: 200% 200%;
+    animation: waterFlow 6s ease-in-out infinite;
 }
 
-header,
-footer {
+@keyframes waterFlow {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+header {
     width: 1200px;
     max-width: 100%;
     margin: 0 auto;
@@ -15,11 +31,19 @@ footer {
     font-family: "Cormorant Garamond", serif;
 }
 
+header,
+main {
+    position: relative;
+    z-index: 2;
+}
+
 h1 {
     margin: 0;
+    padding: 5px 0;
     font-size: 2rem;
-    font-weight: 200;
+    font-weight: 4000;
     letter-spacing: 0.08em;
+    color: rgb(255, 255, 255);
 }
 
 main {
@@ -36,8 +60,9 @@ main {
     height: 675px;
     overflow: hidden;
     border-radius: 24px;
-    background: rgb(0, 0, 0);
     box-shadow: 0 12px 40px rgba(50, 74, 59, 0.18);
+    cursor: pointer;
+    background-color: rgb(30, 36, 31);
 }
 
 .video-section video {
@@ -45,13 +70,13 @@ main {
     height: 100%;
     object-fit: cover;
     display: block;
-    filter: brightness(1.02) saturate(1.05);
-    transition: filter 0.8s ease, transform 0.8s ease;
+    filter: brightness(0.7) saturate(1.05) grayscale(10%);
+    transition: transform 0.8s ease, filter 0.8s ease;
 }
 
 .video-section:hover video {
-    filter: brightness(1.12) saturate(1.2) contrast(1.03);
     transform: scale(1.02);
+    filter: brightness(0.7) saturate(1.05) grayscale(10%);
 }
 
 .quote {
@@ -67,10 +92,16 @@ main {
     color: rgb(255, 252, 246);
 }
 
+.chinese,
+.author,
+.translation {
+    transition: opacity 1.2s ease;
+}
+
 .chinese {
     margin: 0;
     font-family: "Ma Shan Zheng", cursive;
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 500;
     line-height: 1.4;
     text-shadow: 0 0 14px rgba(255, 255, 255, 0.35);
@@ -78,15 +109,9 @@ main {
 
 .author {
     margin: 14px 0 10px 0;
-
     font-family: "Noto Sans Mono", monospace;
-    font-optical-sizing: auto;
     font-weight: 350;
-    font-style: normal;
-    font-variation-settings:
-        "wdth" 100;
-    font-size: 1.4rem;
-
+    font-size: 1.8rem;
     letter-spacing: 0.04em;
     opacity: 0.95;
 }
@@ -94,21 +119,120 @@ main {
 .translation {
     margin: 0;
     max-width: 700px;
-    
     font-family: "Noto Sans Mono", monospace;
-    font-optical-sizing: auto;
-    font-weight: 150;
-    font-style: normal;
-    font-variation-settings:
-        "wdth" 100;
-    font-size: 1.2rem;
-
+    font-weight: 350;
+    font-size: 1.4rem;
     line-height: 1.4;
     opacity: 0.92;
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
 }
 
-footer p {
-    margin: 0;
+.float-letter {
+    display: inline-block;
+    transition: transform 0.45s ease, text-shadow 0.45s ease;
+}
+
+.float-letter:hover {
+    transform: translateY(-6px) scale(1.03);
+    text-shadow: 0 4px 12px rgba(255, 255, 255, 0.35);
+}
+
+.ripple {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1.8px solid rgba(255, 255, 255, 0.55);
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    animation: ripple-effect 2.5s ease-out forwards;
+    z-index: 9999;
+}
+
+@keyframes ripple-effect {
+    0% {
+        width: 20px;
+        height: 20px;
+        opacity: 0.75;
+    }
+    100% {
+        width: 220px;
+        height: 220px;
+        opacity: 0;
+    }
+}
+
+.cloud {
+    position: fixed;
+    left: -300px;
+    pointer-events: none;
+    animation-name: floatCloud;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    z-index: 0;
+}
+
+@keyframes floatCloud {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+    50% {
+        transform: translateX(60vw) translateY(-10px);
+    }
+    100% {
+        transform: translateX(120vw) translateY(0);
+    }
+}
+
+.line1,
+.line2 {
+    display: inline;
+    opacity: 0;
+    transition: opacity 1.8s ease;
+}
+
+.author,
+.translation {
+    display: block;
+    opacity: 0;
+    transition: opacity 1.8s ease;
+}
+
+#soundToggle {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    z-index: 5;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 48px;
+    height: 48px;
+    padding: 0;
+
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.12);
+    color: rgb(255, 255, 255);
+
+    cursor: pointer;
+    backdrop-filter: blur(6px);
+    transition: background 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
+}
+
+#soundToggle:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+#soundToggle:focus {
+    outline: 2px solid rgba(255, 255, 255, 0.6);
+    outline-offset: 3px;
+}
+
+#soundToggle i {
     font-size: 1.1rem;
+    line-height: 1;
 }

@@ -6,34 +6,46 @@
     <title>Studio 1: Blockbuster Video!</title>
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Sans+Mono:wght@350&family=Nunito:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Sans+Mono:wght@350&family=Cormorant+Garamond:wght@400;500&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
+
 <body>
+
+
     <header>
-        <h1>Out By the Water</h1>
+        <h1>UC Davis Arboretum</h1>
     </header>
 
     <main>
         <section class="video-section">
             <video id="myVideo" autoplay muted loop playsinline poster="images/poster.jpg">
-                <source src="media/arboretum-video.webm" type="video/webm">
-                <source src="media/arboretum-video.mp4" type="video/mp4">
+                <source src="media/arb.webm" type="video/webm">
+                <source src="media/arb.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
 
             <article class="quote">
-                <p class="chinese">行到水穷处，坐看云起时</p>
+
+                <p class="chinese">
+                    <span class="line1">行到水穷处，</span>
+                    <span class="line2">坐看云起时</span>
+                </p>
                 <p class="author">— Wang Wei</p>
                 <p class="translation">Walk to where the water ends, then sit and watch the clouds rise.</p>
             </article>
+
+            <button id="soundToggle" aria-label="Toggle sound">
+                <i class="fa-solid fa-volume-xmark"></i>
+            </button>
+
         </section>
     </main>
-
 </body>
 </html>
