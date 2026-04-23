@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio 2: Check Yourself</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>coffee + mood check</h1>
+            <h2>tracking my mood over 2 hours.</h2>
+            <h3>4/20/26</h3>
+        </header>
+
+        <section id="layout">
+            <div class="coffee-area">
+                <div class="latte-hover">
+                    <div class="latte-float">
+                        <img src="images/latte.png" alt="latte" class="latte">
+                    </div>
+                </div>
+            </div>
+
+            <div class="dropdown-area">
+                <select id="timeSelect">
+                    <option value="">choose a time</option>
+                </select>
+            </div>
+
+            <div class="info-area">
+                <h4 id="displayTime">time</h4>
+                <p><strong>mood:</strong> <span id="displayMood">—</span></p>
+                <p><strong>coffee level:</strong> <span id="displayCoffee">—</span></p>
+                <p><strong>notes:</strong> <span id="displayNotes">—</span></p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

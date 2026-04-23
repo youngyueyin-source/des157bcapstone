@@ -1,0 +1,42 @@
+{
+  "point1": {
+    "time": "9:00 AM",
+    "mood": 2,
+    "reason": "still sleepy"
+  },
+  "point2": {
+    "time": "9:15 AM",
+    "mood": 3,
+    "reason": "starting to wake up"
+  },
+  "point3": {
+    "time": "9:30 AM",
+    "mood": 4,
+    "reason": "had coffee"
+  },
+  "point4": {
+    "time": "9:45 AM",
+    "mood": 3,
+    "reason": "a little stressed about work"
+  },
+  "point5": {
+    "time": "10:00 AM",
+    "mood": 4,
+    "reason": "finished something important"
+  },
+  "point6": {
+    "time": "10:15 AM",
+    "mood": 5,
+    "reason": "feeling productive"
+  },
+  "point7": {
+    "time": "10:30 AM",
+    "mood": 4,
+    "reason": "getting a little tired again"
+  },
+  "point8": {
+    "time": "10:45 AM",
+    "mood": 3,
+    "reason": "hungry and distracted"
+  }
+}
