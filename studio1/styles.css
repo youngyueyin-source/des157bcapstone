@@ -28,7 +28,6 @@ header {
     margin: 0 auto;
     text-align: center;
     padding: 20px 0;
-    font-family: "Cormorant Garamond", serif;
 }
 
 header,
@@ -44,6 +43,15 @@ h1 {
     font-weight: 1000;
     letter-spacing: 0.08em;
     color: rgb(255, 255, 255);
+    font-family: "Cormorant Garamond", serif;
+}
+
+h2 {
+    color: rgb(255, 255, 255);
+    font-weight: lighter;
+    margin-top: 5px;
+    font-family: "Noto Sans Mono", monospace;
+    font-size: 1.4em;
 }
 
 main {
@@ -56,6 +64,7 @@ main {
 
 .video-section {
     position: relative;
+    margin-top: -15px;
     width: 100%;
     height: 675px;
     overflow: hidden;

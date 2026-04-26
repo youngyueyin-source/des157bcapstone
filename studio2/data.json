@@ -1,0 +1,50 @@
+{
+    "point1": {
+        "time": "1:00 PM",
+        "mood": 3,
+        "coffee": "none",
+        "reason": "tired"
+    },
+    "point2": {
+        "time": "1:15 PM",
+        "mood": 3,
+        "coffee": "none",
+        "reason": "making latte"
+    },
+    "point3": {
+        "time": "1:30 PM",
+        "mood": 4,
+        "coffee": "sipping",
+        "reason": "feeling better"
+    },
+    "point4": {
+        "time": "1:45 PM",
+        "mood": 3,
+        "coffee": "drinking",
+        "reason": "stressed"
+    },
+    "point5": {
+        "time": "2:00 PM",
+        "mood": 4,
+        "coffee": "almost done",
+        "reason": "productive"
+    },
+    "point6": {
+        "time": "2:15 PM",
+        "mood": 5,
+        "coffee": "finished latte",
+        "reason": "feeling good"
+    },
+    "point7": {
+        "time": "2:30 PM",
+        "mood": 5,
+        "coffee": "none",
+        "reason": "hype gym sesh"
+    },
+    "point8": {
+        "time": "2:45 PM",
+        "mood": 4,
+        "coffee": "none",
+        "reason": "hungry"
+    }
+}

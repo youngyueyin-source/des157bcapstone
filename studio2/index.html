@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Studio 2: Check Yourself</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&family=Fuzzy+Bubbles:wght@400;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
@@ -11,9 +16,9 @@
 <body>
     <main>
         <header>
-            <h1>coffee + mood check</h1>
-            <h2>tracking my mood over 2 hours.</h2>
-            <h3>4/20/26</h3>
+            <h1 class="h1">coffee + mood check</h1>
+            <h2 class="h2">tracking my mood and coffee intake over 2 hours.</h2>
+            <h3 class="h3">4/20/26</h3>
         </header>
 
         <section id="layout">
@@ -31,11 +36,15 @@
                 </select>
             </div>
 
-            <div class="info-area">
-                <h4 id="displayTime">time</h4>
-                <p><strong>mood:</strong> <span id="displayMood">—</span></p>
-                <p><strong>coffee level:</strong> <span id="displayCoffee">—</span></p>
-                <p><strong>notes:</strong> <span id="displayNotes">—</span></p>
+            <div class="napkin-hover">
+                <div class="napkin-float">
+                    <div class="info-area">
+                        <h4 id="displayTime">time</h4>
+                        <p><strong>mood:</strong> <span id="displayMood">—</span></p>
+                        <p><strong>coffee:</strong> <span id="displayCoffee">—</span></p>
+                        <p><strong>notes:</strong> <span id="displayNotes">—</span></p>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
