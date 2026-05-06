@@ -1,0 +1,234 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #f9d7ff;
+    color: #4f4a5d;
+    overflow-x: hidden;
+}
+
+#dreamscape {
+    position: relative;
+    width: 100%;
+    min-height: 2200px;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    background:
+        radial-gradient(circle at 20% 10%, #b590ff 0%, transparent 30%),
+        radial-gradient(circle at 80% 35%, #c7fff3 0%, transparent 32%),
+        radial-gradient(circle at 65% 65%, #fff3a8 0%, transparent 35%),
+        radial-gradient(circle at 20% 90%, #ff8ba8 0%, transparent 35%),
+        linear-gradient(160deg, #bca7ff, #b8e9ff, #fff1ae, #ffb2bd);
+}
+
+.grain {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.18;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+    z-index: 2;
+}
+
+h1,
+h2 {
+    font-family: "Gaegu", sans-serif;
+    color: white;
+    text-shadow:
+        -2px -2px 0 #4d4d4d,
+        2px -2px 0 #4d4d4d,
+        -2px 2px 0 #4d4d4d,
+        2px 2px 0 #4d4d4d;
+}
+
+h1 {
+    font-size: 4.5rem;
+    letter-spacing: 3px;
+    margin: 0 0 35px;
+}
+
+h2 {
+    font-size: 2.2rem;
+    margin: 0 0 10px;
+}
+
+p {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.45rem;
+    line-height: 1.25;
+    max-width: 470px;
+    margin: 0;
+}
+
+.panel {
+    position: absolute;
+    z-index: 20;
+}
+
+.intro {
+    top: 80px;
+    left: 110px;
+}
+
+.career {
+    top: 690px;
+    left: 140px;
+}
+
+.confidence {
+    top: 930px;
+    right: 120px;
+}
+
+.balance {
+    top: 1250px;
+    left: 380px;
+}
+
+.love {
+    top: 1600px;
+    left: 180px;
+}
+
+.future {
+    top: 1850px;
+    right: 120px;
+}
+
+.cloud {
+    position: absolute;
+    z-index: 4;
+    width: 370px;
+    filter: drop-shadow(0 4px 0 rgba(70, 70, 70, 0.35));
+}
+
+.cloud-one {
+    top: 30px;
+    right: 30px;
+}
+
+.cloud-two {
+    top: 330px;
+    left: -30px;
+    width: 560px;
+}
+
+.cloud-three {
+    top: 1510px;
+    right: 10px;
+    width: 520px;
+}
+
+.cloud-four {
+    top: 1800px;
+    right: -60px;
+    width: 430px;
+}
+
+.trail {
+    position: absolute;
+    z-index: 3;
+    width: 480px;
+    height: 1500px;
+    border-left: 3px solid rgba(255, 255, 255, 0.65);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.trail-one {
+    top: -100px;
+    left: 540px;
+    transform: rotate(10deg);
+}
+
+.trail-two {
+    top: -120px;
+    left: 580px;
+    transform: rotate(12deg);
+}
+
+.star {
+    position: absolute;
+    z-index: 6;
+    color: white;
+    font-size: 2.5rem;
+    text-shadow: 0 0 18px white;
+    pointer-events: none;
+}
+
+.star-one {
+    top: 290px;
+    left: 70px;
+}
+
+.star-two {
+    top: 510px;
+    left: 270px;
+    font-size: 1.5rem;
+}
+
+.star-three {
+    top: 870px;
+    right: 330px;
+}
+
+.star-four {
+    top: 1120px;
+    right: 90px;
+    font-size: 1.8rem;
+}
+
+.star-five {
+    top: 1260px;
+    left: 680px;
+}
+
+.star-six {
+    top: 1450px;
+    left: 120px;
+    font-size: 1.6rem;
+}
+
+.star-seven {
+    top: 1740px;
+    left: 120px;
+}
+
+.star-eight {
+    top: 1880px;
+    right: 260px;
+    font-size: 1.7rem;
+}
+
+.star-nine {
+    top: 2050px;
+    left: 520px;
+    font-size: 2rem;
+}
+
+.star-ten {
+    top: 2200px;
+    right: 120px;
+}
+
+.vine {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 160px;
+    z-index: 10;
+    pointer-events: none;
+    opacity: 0.75;
+}
+
+.vine-left {
+    left: 0;
+}
+
+.vine-right {
+    right: 0;
+}
+
