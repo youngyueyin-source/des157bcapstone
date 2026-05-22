@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Version 1</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main>
+        <section id="basket-game" data-aos="fade-up">
+            <h1>Harvest Your Ingredients</h1>
+            <p>Drag one or more fruits and vegetables into the woven basket.</p>
+
+            <div class="game-area">
+                <div class="ingredients">
+                    <img src="../images/fig.png" alt="fig fruit" class="draggable" draggable="true" id="fig">
+                    <img src="../images/tomato.png" alt="tomato veggie" class="draggable" draggable="true" id="tomato">
+                    <img src="../images/zuchini.png" alt="zucchini veggie" class="draggable" draggable="true" id="zuchini">
+                </div>
+
+                <div id="basket" class="basket">
+                    <img src="../images/basket.png" alt="woven basket" class="basket-img">
+                    <p>Drop ingredients into the basket</p>
+                    <div id="basket-items"></div>
+                </div>
+
+                <button id="cook-button" class="cook-button hidden" type="button">
+                    Start Cooking →
+                </button>
+            </div>
+
+            <p id="message"></p>
+        </section>
+    </main>
+
+    <section id="cooking-overlay" class="overlay hidden">
+        <div class="overlay-content">
+            <button id="close-overlay" class="close-button" type="button">×</button>
+
+            <h2>Begin Cooking</h2>
+            <p>Add seasonings, butter, salt, and pepper to cook your meal.</p>
+
+            <div class="cooking-workspace">
+                <div class="seasonings">
+                    <h3>Seasonings</h3>
+
+                    <button class="seasoning-button" type="button">Salt</button>
+                    <button class="seasoning-button" type="button">Pepper</button>
+                    <button class="seasoning-button" type="button">Butter</button>
+                    <button class="seasoning-button" type="button">Herbs</button>
+                </div>
+
+                <div class="cooking-pot">
+                    <h3>Your Cooking Pot</h3>
+                    <div id="chosen-list"></div>
+                    <p id="cooking-message">Your selected ingredients will appear here.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
