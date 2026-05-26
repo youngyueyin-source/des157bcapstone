@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Future Plate</title>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header class="hero">
+        <p class="eyebrow">Designing Your Future</p>
+        <h1>The Future Plate</h1>
+        <p>
+            A scrollable dining experience where your choices shape the future of sustainable dining.
+        </p>
+    </header>
+
+    <main>
+        <section class="story-section">
+            <div class="text-card" data-aos="fade-up">
+                <h2>Welcome to the future of dining</h2>
+                <p>
+                    In this future restaurant, every ingredient has a story.
+                    Choose what goes on your plate and see how sustainable your meal becomes.
+                </p>
+            </div>
+        </section>
+
+        <section class="choice-section" data-station="garden">
+            <div class="station-text" data-aos="fade-right">
+                <p class="eyebrow">Station 01</p>
+                <h2>The Garden Wall</h2>
+                <p>Choose your vegetable source.</p>
+            </div>
+
+            <div class="choices">
+                <button class="choice-card" data-aos="fade-up" data-aos-delay="100" data-type="sustainable" data-item="local-greens" data-points="35">
+                    <img src="../images/local-greens.png" alt="Local greens">
+                    <h3>Local Greens</h3>
+                    <p>Seasonal food grown nearby.</p>
+                </button>
+
+                <button class="choice-card warning" data-aos="fade-up" data-aos-delay="250" data-type="unsustainable" data-item="imported-avocado" data-points="15">
+                    <img src="../images/imported-avocado.png" alt="Imported avocado">
+                    <h3>Imported Avocado</h3>
+                    <p>Travels farther before reaching your plate.</p>
+                </button>
+            </div>
+        </section>
+
+        <section class="choice-section" data-station="protein">
+            <div class="station-text" data-aos="fade-right">
+                <p class="eyebrow">Station 02</p>
+                <h2>The Protein Station</h2>
+                <p>Choose your protein.</p>
+            </div>
+
+            <div class="choices">
+                <button class="choice-card" data-aos="fade-up" data-aos-delay="100" data-type="sustainable" data-item="lentils" data-points="35">
+                    <img src="../images/lentils.png" alt="Lentils">
+                    <h3>Lentils</h3>
+                    <p>A lower-impact plant protein.</p>
+                </button>
+
+                <button class="choice-card warning" data-aos="fade-up" data-aos-delay="250" data-type="unsustainable" data-item="beef-steak" data-points="10">
+                    <img src="../images/beef-steak.png" alt="Beef steak">
+                    <h3>Beef Steak</h3>
+                    <p>A higher-impact protein choice.</p>
+                </button>
+            </div>
+        </section>
+
+        <section class="choice-section" data-station="waste">
+            <div class="station-text" data-aos="fade-right">
+                <p class="eyebrow">Station 03</p>
+                <h2>The Waste Station</h2>
+                <p>Choose what happens after the meal.</p>
+            </div>
+
+            <div class="choices">
+                <button class="choice-card" data-aos="fade-up" data-aos-delay="100" data-type="sustainable" data-item="compost-bowl" data-points="30">
+                    <img src="../images/compost-bowl.png" alt="Compost bowl">
+                    <h3>Compost Bowl</h3>
+                    <p>Food scraps return to the soil.</p>
+                </button>
+
+                <button class="choice-card warning" data-aos="fade-up" data-aos-delay="250" data-type="unsustainable" data-item="plastic-box" data-points="5">
+                    <img src="../images/plastic-box.png" alt="Plastic takeout box">
+                    <h3>Plastic Takeout Box</h3>
+                    <p>Creates more single-use waste.</p>
+                </button>
+            </div>
+        </section>
+
+        <section class="result-section">
+            <div class="final-plate-card" data-aos="zoom-in">
+                <div class="final-plate">
+                    <div class="score-content">
+                        <p class="eyebrow">Your Sustainability Score</p>
+                        <h2 class="score-number">0/100</h2>
+                        <p class="result-message">
+                            Make your choices above to reveal your final score.
+                        </p>
+                    </div>
+                </div>
+
+                <button class="reset-button">Restart Plate</button>
+            </div>
+        </section>
+    </main>
+
+    <aside class="plate-tracker">
+        <h2>Your Plate</h2>
+
+        <div class="plate">
+            <div class="plate-items"></div>
+        </div>
+
+        <p class="plate-count">0 / 3 choices made</p>
+    </aside>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</body>
+</html>
