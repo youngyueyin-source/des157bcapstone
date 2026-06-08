@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Davis 2045 — The Living Table</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- HERO -->
+<section id="hero">
+  <canvas id="hero-canvas"></canvas>
+  <div class="rays"></div>
+  <div class="dome-glow"></div>
+  <div class="haze"></div>
+
+  <svg class="hero-corner-leaf sw2" style="position:absolute;left:-18px;bottom:8%;width:140px;opacity:.22;" viewBox="0 0 140 220" fill="none">
+    <path d="M70 210 C70 210 8 165 12 95 C16 30 70 5 70 5 C70 5 124 30 128 95 C132 165 70 210 70 210Z" fill="#47a87a"/>
+    <path d="M70 210 C70 210 38 175 35 125 C32 82 70 65 70 65 C70 65 108 82 105 125 C102 175 70 210 70 210Z" fill="#2a6d48" opacity=".6"/>
+  </svg>
+  <svg class="hero-corner-leaf sw1" style="position:absolute;right:-10px;top:12%;width:100px;opacity:.18;" viewBox="0 0 100 165" fill="none">
+    <path d="M50 158 C50 158 5 120 8 65 C11 15 50 2 50 2 C50 2 89 15 92 65 C95 120 50 158 50 158Z" fill="#b2dfc2"/>
+  </svg>
+  <svg class="hero-corner-leaf sw3" style="position:absolute;left:22%;top:18%;width:52px;opacity:.15;" viewBox="0 0 52 80">
+    <path d="M26 76 C26 76 3 57 4 30 C5 8 26 1 26 1 C26 1 47 8 48 30 C49 57 26 76 26 76Z" fill="#47a87a"/>
+  </svg>
+  <svg class="hero-corner-leaf sw2" style="position:absolute;right:25%;bottom:22%;width:44px;opacity:.13;" viewBox="0 0 44 68">
+    <path d="M22 65 C22 65 2 48 3 26 C4 7 22 1 22 1 C22 1 40 7 41 26 C42 48 22 65 22 65Z" fill="#b2dfc2"/>
+  </svg>
+
+  <div class="hero-content">
+    <p class="hero-eyebrow">2045 in Davis, California</p>
+    <h1 class="hero-title">The <em>Living</em><br>Table</h1>
+    <p class="hero-sub">
+      In a future shaped by care, every meal tells the story of the city
+      that grew from soil to stem to shared table.
+    </p>
+  </div>
+
+  <div class="scroll-cue">
+    <div class="scroll-mouse"></div>
+    <span>Scroll to enter</span>
+  </div>
+</section>
+
+<!-- CHAPTER 1 — THE SHIFT -->
+<section id="the-shift">
+  <svg class="shift-plant sw1" style="right:-28px;bottom:0;width:220px;" viewBox="0 0 220 400">
+    <path d="M110 385 C110 385 20 305 28 175 C36 58 110 12 110 12 C110 12 184 58 192 175 C200 305 110 385 110 385Z" fill="#b2dfc2"/>
+    <path d="M110 385 C110 385 62 335 58 248 C54 172 110 142 110 142 C110 142 166 172 162 248 C158 335 110 385 110 385Z" fill="#47a87a" opacity=".55"/>
+  </svg>
+  <svg class="shift-plant sw2" style="left:-20px;top:5%;width:160px;" viewBox="0 0 160 280">
+    <path d="M80 265 C80 265 18 210 22 125 C26 45 80 8 80 8 C80 8 134 45 138 125 C142 210 80 265 80 265Z" fill="#2a6d48"/>
+  </svg>
+
+  <div class="shift-inner">
+    <div class="tag reveal">Chapter One</div>
+    <p class="shift-quote reveal d1">
+      Things didn't change overnight.
+    </p>
+    <p class="shift-body reveal d2">
+      It started with <em>small choices</em>. Herbs growing outside apartment windows. Restaurants buying from farms just beyond town. Empty lots becoming gardens.
+      By the time people noticed, Davis looked different. Food traveled fewer miles, seasons mattered again, and <em>meals felt connected to the place they came from</em>.
+    </p>
+  </div>
+</section>
+
+<!-- SUSTAINABILITY CONCEPTS -->
+<section id="sustainability">
+  <div class="sec-hd">
+    <div class="tag reveal">The Systems</div>
+    <h2 class="reveal d1">Six ways the city<br><em>feeds itself differently</em></h2>
+  </div>
+
+  <div class="concepts-grid">
+    <div class="c-card reveal">
+      <span class="c-icon">🌿</span>
+      <h3>Vertical Farming</h3>
+      <p>Forty-story growing towers line the downtown corridor. Imagine beautiful leafy greens, herbs, and microgreens, year-round, growing vertically, with 95% less water than conventional fields.</p>
+    </div>
+    <div class="c-card reveal d1">
+      <span class="c-icon">🔄</span>
+      <h3>Closed-Loop Composting</h3>
+      <p>Every restaurant is paired with a neighborhood hub. Food scraps return to soil within 72 hours. Meaning kitchen to garden, week after week, nothing wasted.</p>
+    </div>
+    <div class="c-card reveal d2">
+      <span class="c-icon">☀️</span>
+      <h3>Solar Kitchen Energy</h3>
+      <p>Rooftop arrays and community microgrids power every stove and refrigerator. Summer harvest surplus is stored for winter menus: the sun cooks twice.</p>
+    </div>
+    <div class="c-card reveal d3">
+      <span class="c-icon">💧</span>
+      <h3>Water Reclamation</h3>
+      <p>Greywater from every kitchen filters through constructed wetlands before irrigating the city gardens. Each litre of cooking water is used three times.</p>
+    </div>
+    <div class="c-card reveal d4">
+      <span class="c-icon">🍂</span>
+      <h3>Seasonal Menus Only</h3>
+      <p>No strawberries in December. No asparagus in August. Every menu turns with the valley. A living calendar of what the land is ready to offer this week.</p>
+    </div>
+    <div class="c-card reveal d5">
+      <span class="c-icon">📦</span>
+      <h3>Zero-Waste Packaging</h3>
+      <p>Containers grown from mycelium. Utensils pressed from rice husks. In Davis 2045, the packaging you hold is as alive as the meal inside it.</p>
+    </div>
+  </div>
+</section>
+
+<!-- STORY SCENE -->
+<section id="story-scene">
+  <div class="story-grid">
+    <div class="story-text">
+      <div class="tag dark reveal">A Morning in 2045</div>
+      <h2 class="reveal d1"><em>Mia</em> wakes to the smell<br>of her building's garden</h2>
+      <p class="story-p reveal d2">
+        On the fourth floor of the Solstice Residences, <strong>Mia</strong> steps
+        onto her balcony and reaches through the vertical garden panel to pick three leaves
+        of fresh basil. The dew is still on them.
+      </p>
+      <p class="story-p reveal d3">
+        Downstairs, the shared kitchen is already humming. Solar panels captured enough overnight
+        for a full day of cooking. Neighbours share the harvest, swap seedlings, and leave notes
+        about what's ready.
+      </p>
+      <p class="story-p reveal d4">
+        Tonight she's going to the <strong>Living Table</strong>: the city's beloved community
+        restaurant, where the menu changes every day based on what arrived from the surrounding
+        farms that morning.
+      </p>
+    </div>
+
+    <div class="story-visual reveal d2">
+      <div class="stat-card flt">
+        <div class="stat-num">30 miles</div>
+        <div class="stat-lbl">Maximum sourcing radius for all ingredients</div>
+      </div>
+      <div class="stat-card flt2">
+        <div class="stat-num">90%</div>
+        <div class="stat-lbl">Of Davis restaurants now running zero-carbon kitchens</div>
+      </div>
+      <div class="stat-card flt3">
+        <div class="stat-num">3,200+</div>
+        <div class="stat-lbl">Active vertical growing panels across the city</div>
+      </div>
+      <div class="stat-card flt" style="animation-delay:.9s">
+        <div class="stat-num">15 min</div>
+        <div class="stat-lbl">Average time from harvest to restaurant kitchen</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- KITCHEN INTRO -->
+<section id="kitchen-intro">
+  <div class="garden-shelf" aria-hidden="true">
+    <svg viewBox="0 0 80 120"><path d="M40 112C40 112 8 85 10 50 C12 18 40 5 40 5C40 5 68 18 70 50C72 85 40 112 40 112Z" fill="#47a87a"/></svg>
+    <svg viewBox="0 0 60 90"><path d="M30 86C30 86 5 64 6 38C7 14 30 3 30 3C30 3 53 14 54 38C55 64 30 86 30 86Z" fill="#2a6d48"/></svg>
+    <svg viewBox="0 0 70 105"><path d="M35 100C35 100 6 75 7 44C8 17 35 4 35 4C35 4 62 17 63 44C64 75 35 100 35 100Z" fill="#47a87a" opacity=".7"/></svg>
+  </div>
+  <div class="ki-content">
+    <div class="tag dark reveal">Your Turn</div>
+    <h2 class="reveal d1">Welcome to the<br><em>Living Kitchen</em></h2>
+    <p class="reveal d2">
+      The chef steps aside. Tonight, you compose the meal.
+      Choose from what the vertical gardens offered up this morning
+      and we'll make it into something special!
+    </p>
+  </div>
+</section>
+
+<!-- MEAL BUILDER -->
+<section id="meal-builder">
+  <div class="builder-wrap">
+    <div class="builder-hd">
+      <h2 class="reveal">Build Your Future Meal</h2>
+      <p class="reveal d1">Choose one from each category. The kitchen is ready.</p>
+    </div>
+
+    <!-- VEGETABLES -->
+    <div class="ing-category reveal">
+      <div class="cat-label"><h3>🌿 Vegetables — from the vertical garden</h3></div>
+      <div class="ing-grid" data-cat="veg">
+        <div class="ing-card" data-cat="veg" data-name="Vertical Kale" data-emoji="🌿" data-score="98">
+          <span class="ing-emoji">🌿</span>
+          <div class="ing-name">Vertical Kale</div>
+          <div class="ing-origin">harvested 6 am</div>
+        </div>
+        <div class="ing-card" data-cat="veg" data-name="Heirloom Tomato" data-emoji="🍅" data-score="90">
+          <span class="ing-emoji">🍅</span>
+          <div class="ing-name">Heirloom Tomato</div>
+          <div class="ing-origin">Rooftop solar greenhouse, south wing</div>
+        </div>
+        <div class="ing-card" data-cat="veg" data-name="Rainbow Carrot" data-emoji="🥕" data-score="85">
+          <span class="ing-emoji">🥕</span>
+          <div class="ing-name">Rainbow Carrot</div>
+          <div class="ing-origin">Hydroponic bay, city farm collective</div>
+        </div>
+        <div class="ing-card" data-cat="veg" data-name="Living Microgreens" data-emoji="🌱" data-score="99">
+          <span class="ing-emoji">🌱</span>
+          <div class="ing-name">Living Microgreens</div>
+          <div class="ing-origin">Harvested this morning, the fresh scent lingers</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROTEINS -->
+    <div class="ing-category reveal d1">
+      <div class="cat-label"><h3>🫘 Proteins — grown, not raised</h3></div>
+      <div class="ing-grid" data-cat="pro">
+        <div class="ing-card" data-cat="pro" data-name="Spiced Lentils" data-emoji="🫘" data-score="92">
+          <span class="ing-emoji">🫘</span>
+          <div class="ing-name">Spiced Lentils</div>
+          <div class="ing-origin">Heritage variety, valley dry-farm</div>
+        </div>
+        <div class="ing-card" data-cat="pro" data-name="Mycelium Mushroom" data-emoji="🍄" data-score="97">
+          <span class="ing-emoji">🍄</span>
+          <div class="ing-name">Mycelium Mushroom</div>
+          <div class="ing-origin">Grown in recycled coffee substrate</div>
+        </div>
+        <div class="ing-card" data-cat="pro" data-name="Solar-Fed Egg" data-emoji="🥚" data-score="80">
+          <span class="ing-emoji">🥚</span>
+          <div class="ing-name">Solar-Fed Egg</div>
+          <div class="ing-origin">City flock, free-roam east commons</div>
+        </div>
+        <div class="ing-card" data-cat="pro" data-name="Cultured Tempeh" data-emoji="🌰" data-score="95">
+          <span class="ing-emoji">🌰</span>
+          <div class="ing-name">Cultured Tempeh</div>
+          <div class="ing-origin">Fermented locally, 48-hour process</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GRAINS -->
+    <div class="ing-category reveal d2">
+      <div class="cat-label"><h3>🌾 Grains — from the surrounding valley</h3></div>
+      <div class="ing-grid" data-cat="grain">
+        <div class="ing-card" data-cat="grain" data-name="Ancient Farro" data-emoji="🌾" data-score="88">
+          <span class="ing-emoji">🌾</span>
+          <div class="ing-name">Ancient Farro</div>
+          <div class="ing-origin">Dry-farmed, regional heirloom seed</div>
+        </div>
+        <div class="ing-card" data-cat="grain" data-name="Water-Wise Rice" data-emoji="🍚" data-score="85">
+          <span class="ing-emoji">🍚</span>
+          <div class="ing-name">Water-Wise Rice</div>
+          <div class="ing-origin">Low-water paddy, Sacramento delta</div>
+        </div>
+        <div class="ing-card" data-cat="grain" data-name="Wild Sourdough" data-emoji="🍞" data-score="90">
+          <span class="ing-emoji">🍞</span>
+          <div class="ing-name">Wild Sourdough</div>
+          <div class="ing-origin">1979 starter, healthy yeast</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- COOKING METHOD -->
+    <div class="ing-category reveal d3">
+      <div class="cat-label"><h3>🔥 Cooking Method — which kitchen language shall you use?</h3></div>
+      <div class="ing-grid" data-cat="method">
+        <div class="ing-card" data-cat="method" data-name="Solar-Fired Roast" data-emoji="☀️" data-score="98">
+          <span class="ing-emoji">☀️</span>
+          <div class="ing-name">Solar-Fired Roast</div>
+          <div class="ing-origin">Concentrated solar ovens, 400 °C</div>
+        </div>
+        <div class="ing-card" data-cat="method" data-name="Steam Harvest" data-emoji="💨" data-score="90">
+          <span class="ing-emoji">💨</span>
+          <div class="ing-name">Steam Harvest</div>
+          <div class="ing-origin">Reclaimed water steam, gentle &amp; alive</div>
+        </div>
+        <div class="ing-card" data-cat="method" data-name="Raw &amp; Living" data-emoji="🌿" data-score="99">
+          <span class="ing-emoji">🌿</span>
+          <div class="ing-name">Raw &amp; Living</div>
+          <div class="ing-origin">No heat. light acids and pressed oils</div>
+        </div>
+        <div class="ing-card" data-cat="method" data-name="Slow Clay Braise" data-emoji="🫕" data-score="78">
+          <span class="ing-emoji">🫕</span>
+          <div class="ing-name">Slow Clay Braise</div>
+          <div class="ing-origin">72-hour low heat, terracotta vessels</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- STICKY PREVIEW BAR -->
+    <div class="meal-bar" id="meal-bar">
+      <div class="chips-row" id="chips-row">
+        <span class="chip-hint">Your selections will appear here…</span>
+      </div>
+      <button class="complete-btn" id="complete-btn">Complete Your Dish →</button>
+    </div>
+  </div>
+</section>
+
+<!-- MEAL REVEAL -->
+<div id="meal-reveal" role="dialog" aria-modal="true" aria-label="Your dish reveal">
+  <div class="rv-glow"></div>
+  <div class="rv-wrap">
+    <button class="rv-close" aria-label="Close">✕</button>
+    <p class="rv-sub">Your dish for the evening</p>
+    <h2 class="rv-name" id="rv-name"></h2>
+    <p class="rv-desc" id="rv-desc"></p>
+
+    <!-- Sustainability Score -->
+    <div class="rv-score">
+      <div class="rv-score-ring">
+        <svg viewBox="0 0 100 100" aria-hidden="true">
+          <circle class="rv-ring-track" cx="50" cy="50" r="42"/>
+          <circle class="rv-ring-fill" id="rv-ring-fill" cx="50" cy="50" r="42"/>
+        </svg>
+        <div class="rv-score-num" id="rv-score-num">0</div>
+      </div>
+      <div class="rv-score-label">Sustainability Score</div>
+    </div>
+
+    <div class="rv-stats">
+      <div>
+        <span class="rv-stat-num" id="rv-co2"></span>
+        <span class="rv-stat-lbl">CO₂ equivalent</span>
+      </div>
+      <div>
+        <span class="rv-stat-num" id="rv-h2o"></span>
+        <span class="rv-stat-lbl">Water used</span>
+      </div>
+      <div>
+        <span class="rv-stat-num" id="rv-mi"></span>
+        <span class="rv-stat-lbl">Travel distance</span>
+      </div>
+    </div>
+
+    <div class="rv-actions">
+      <button class="rv-btn rv-btn-p" id="rv-enjoy">Enjoy your meal</button>
+      <button class="rv-btn rv-btn-s" id="rv-again">Build another</button>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">The <span>Living</span> Table</div>
+  <p>
+    A speculative vision for Davis, California in 2045<br>
+    Designed as a love letter to sustainable futures<br>
+    <em>DES 157B · Jade Young Capstone Project</em>
+  </p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
